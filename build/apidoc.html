@@ -63,8 +63,48 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-print.gulp-print">
+            function <span class="apidocSignatureSpan"></span>gulp-print
+            <span class="apidocSignatureSpan">(format)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-print.gulp_print">
+            function <span class="apidocSignatureSpan">gulp-print.</span>gulp_print
+            <span class="apidocSignatureSpan">(format)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.gulp-print.log">
             function <span class="apidocSignatureSpan">gulp-print.</span>log
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-print.gulp_print">module gulp-print.gulp_print</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-print.gulp_print.gulp_print">
+            function <span class="apidocSignatureSpan">gulp-print.</span>gulp_print
+            <span class="apidocSignatureSpan">(format)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-print.gulp_print.log">
+            function <span class="apidocSignatureSpan">gulp-print.gulp_print.</span>log
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -79,8 +119,121 @@
 
 
     <h2>
+        <a href="#apidoc.element.gulp-print.gulp-print" id="apidoc.element.gulp-print.gulp-print">
+        function <span class="apidocSignatureSpan"></span>gulp-print
+        <span class="apidocSignatureSpan">(format)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-print = function (format) {
+  if (format == null) {
+    format = function(filepath) {
+      return filepath;
+    };
+  }
+  return map(function(file, cb) {
+    var filepath, formatted;
+    filepath = magenta(path.relative(process.cwd(), file.path));
+    formatted = format(filepath);
+    if (formatted) {
+      print.log(formatted);
+    }
+    return cb(null, file);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-print.gulp_print" id="apidoc.element.gulp-print.gulp_print">
+        function <span class="apidocSignatureSpan">gulp-print.</span>gulp_print
+        <span class="apidocSignatureSpan">(format)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp_print = function (format) {
+  if (format == null) {
+    format = function(filepath) {
+      return filepath;
+    };
+  }
+  return map(function(file, cb) {
+    var filepath, formatted;
+    filepath = magenta(path.relative(process.cwd(), file.path));
+    formatted = format(filepath);
+    if (formatted) {
+      print.log(formatted);
+    }
+    return cb(null, file);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.gulp-print.log" id="apidoc.element.gulp-print.log">
         function <span class="apidocSignatureSpan">gulp-print.</span>log
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">log = function (){
+  if(hasGulplog()){
+    // specifically deferring loading here to keep from registering it globally
+    var gulplog = require(&#x27;gulplog&#x27;);
+    gulplog.info.apply(gulplog, arguments);
+  } else {
+    // specifically defering loading because it might not be used
+    var fancylog = require(&#x27;fancy-log&#x27;);
+    fancylog.apply(null, arguments);
+  }
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-print.gulp_print" id="apidoc.module.gulp-print.gulp_print">module gulp-print.gulp_print</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-print.gulp_print.gulp_print" id="apidoc.element.gulp-print.gulp_print.gulp_print">
+        function <span class="apidocSignatureSpan">gulp-print.</span>gulp_print
+        <span class="apidocSignatureSpan">(format)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp_print = function (format) {
+  if (format == null) {
+    format = function(filepath) {
+      return filepath;
+    };
+  }
+  return map(function(file, cb) {
+    var filepath, formatted;
+    filepath = magenta(path.relative(process.cwd(), file.path));
+    formatted = format(filepath);
+    if (formatted) {
+      print.log(formatted);
+    }
+    return cb(null, file);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-print.gulp_print.log" id="apidoc.element.gulp-print.gulp_print.log">
+        function <span class="apidocSignatureSpan">gulp-print.gulp_print.</span>log
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>

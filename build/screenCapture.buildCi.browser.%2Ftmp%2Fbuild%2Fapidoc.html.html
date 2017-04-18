@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/alexgorbatchev/gulp-print"
-
-    >gulp-print (v2.0.1)</a>
+    <a href="https://github.com/alexgorbatchev/gulp-print">gulp-print (v2.0.1)</a>
 </h1>
 <h4>Prints names of files to the console so that you can see what's going through the the gulp pipe.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-print">module gulp-print</a><ol>
 
@@ -184,11 +177,11 @@
     <li>description and source-code<pre class="apidocCodePre">log = function (){
   if(hasGulplog()){
     // specifically deferring loading here to keep from registering it globally
-    var gulplog = require(&#x27;gulplog&#x27;);
+    var gulplog = require('gulplog');
     gulplog.info.apply(gulplog, arguments);
   } else {
     // specifically defering loading because it might not be used
-    var fancylog = require(&#x27;fancy-log&#x27;);
+    var fancylog = require('fancy-log');
     fancylog.apply(null, arguments);
   }
   return this;
@@ -241,11 +234,11 @@
     <li>description and source-code<pre class="apidocCodePre">log = function (){
   if(hasGulplog()){
     // specifically deferring loading here to keep from registering it globally
-    var gulplog = require(&#x27;gulplog&#x27;);
+    var gulplog = require('gulplog');
     gulplog.info.apply(gulplog, arguments);
   } else {
     // specifically defering loading because it might not be used
-    var fancylog = require(&#x27;fancy-log&#x27;);
+    var fancylog = require('fancy-log');
     fancylog.apply(null, arguments);
   }
   return this;
@@ -262,3 +255,4 @@
     ]
 </div>
 </div>
+</body></html>
