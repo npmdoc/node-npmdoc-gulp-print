@@ -1,9 +1,14 @@
-# api documentation for  [gulp-print (v2.0.1)](https://github.com/alexgorbatchev/gulp-print)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-print.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-print) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-print.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-print)
+# npmdoc-gulp-print
+
+#### api documentation for  [gulp-print (v2.0.1)](https://github.com/alexgorbatchev/gulp-print)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-print.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-print) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-print.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-print)
+
 #### Prints names of files to the console so that you can see what's going through the the gulp pipe.
 
-[![NPM](https://nodei.co/npm/gulp-print.png?downloads=true)](https://www.npmjs.com/package/gulp-print)
+[![NPM](https://nodei.co/npm/gulp-print.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-print)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-print/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-print_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-print/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-print/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-print/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-print/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-print/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-print/build/screenCapture.npmPackageListing.svg)
 
@@ -58,13 +63,11 @@
     "main": "./lib/gulp-print.js",
     "maintainers": [
         {
-            "name": "alexgorbatchev",
-            "email": "alex.gorbatchev@gmail.com"
+            "name": "alexgorbatchev"
         }
     ],
     "name": "gulp-print",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/alexgorbatchev/gulp-print.git"
@@ -75,38 +78,6 @@
     },
     "version": "2.0.1"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-print](#apidoc.module.gulp-print)
-1.  [function <span class="apidocSignatureSpan">gulp-print.</span>log ()](#apidoc.element.gulp-print.log)
-
-
-
-# <a name="apidoc.module.gulp-print"></a>[module gulp-print](#apidoc.module.gulp-print)
-
-#### <a name="apidoc.element.gulp-print.log"></a>[function <span class="apidocSignatureSpan">gulp-print.</span>log ()](#apidoc.element.gulp-print.log)
-- description and source-code
-```javascript
-log = function (){
-  if(hasGulplog()){
-    // specifically deferring loading here to keep from registering it globally
-    var gulplog = require('gulplog');
-    gulplog.info.apply(gulplog, arguments);
-  } else {
-    // specifically defering loading because it might not be used
-    var fancylog = require('fancy-log');
-    fancylog.apply(null, arguments);
-  }
-  return this;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
