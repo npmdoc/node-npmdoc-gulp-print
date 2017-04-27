@@ -1,6 +1,6 @@
 # npmdoc-gulp-print
 
-#### api documentation for  [gulp-print (v2.0.1)](https://github.com/alexgorbatchev/gulp-print)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-print.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-print) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-print.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-print)
+#### basic api documentation for  [gulp-print (v2.0.1)](https://github.com/alexgorbatchev/gulp-print)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-print.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-print) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-print.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-print)
 
 #### Prints names of files to the console so that you can see what's going through the the gulp pipe.
 
@@ -76,7 +76,8 @@
         "pretest": "coffee --bare --output ./lib --compile ./src/*.coffee",
         "test": "mocha test/*.spec.coffee"
     },
-    "version": "2.0.1"
+    "version": "2.0.1",
+    "bin": {}
 }
 ```
 
